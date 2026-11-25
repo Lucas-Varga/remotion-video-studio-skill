@@ -35,6 +35,8 @@ Dentro de `meu-filme/video-studio`, rode `npm run studio` para abrir a prévia, 
 
 O ZIP leva os prompts da equipe, o código do projeto, o instalador e as versões das dependências. O upload disponibiliza a skill no chat. Para produzir o MP4, o ambiente de execução precisa poder instalar pacotes npm e executar o navegador do Remotion. Se o chat só tiver acesso a arquivos, use-o para preparar o briefing, o roteiro e a montagem e execute o instalador local para renderizar. Os nove papéis também funcionam como etapas conduzidas pelo próprio assistente em chats sem subagentes nativos.
 
+Se o chat recusar seu MP3, WAV ou clipe, envie a transcrição e a duração para planejar os cortes. Para a montagem local, copie a locução para `meu-filme/video-studio/public/audio/` e indique o caminho relativo em `narration.file` no arquivo `src/story.ts`. Isso permite sincronizar a voz original no Remotion. [Formatos de anexo no Claude](https://support.claude.com/en/articles/8241126-upload-files-to-claude)
+
 ## Começar uma produção
 
 > Use a skill Video Studio. Quero um anúncio vertical de 20 segundos para apresentar minha cafeteria. Tenho fotos da loja, a marca em SVG e uma locução pronta. Use esses arquivos, sugira uma trilha e termine com um convite para conhecer o espaço.
