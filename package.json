@@ -1,0 +1,11 @@
+{
+  "name": "remotion-video-studio-skill",
+  "description": "Produção de vídeo com Remotion e nove especialistas para agentes de IA",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {"node": ">=22.13.0"},
+  "bin": {"video-studio-install": "./skills/video-studio/scripts/install.mjs"},
+  "files": ["skills/video-studio", "LICENSE", "README.md"]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Studio"
+  short_description: "Crie e edite vídeos com Remotion e uma equipe de produção"
+  default_prompt: "Use $video-studio para montar meu vídeo a partir do briefing e dos materiais disponíveis."

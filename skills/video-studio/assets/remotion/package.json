@@ -1,0 +1,22 @@
+{
+  "name": "video-studio-project",
+  "private": true,
+  "version": "1.0.0",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "render": "remotion render src/index.tsx Filme out/video.mp4 --codec=h264",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.547",
+    "@remotion/media": "4.0.547",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.547"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "typescript": "5.9.3"
+  }
+}
