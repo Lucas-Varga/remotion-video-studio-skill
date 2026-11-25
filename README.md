@@ -13,7 +13,7 @@ Transforme um briefing, fotos de produto e uma locução em um vídeo editável.
 Para trabalhar no computador, instale [Node.js 22.13 ou superior com npm](https://nodejs.org/) e [Git](https://git-scm.com/downloads). O comando abaixo cria a pasta do projeto, registra a skill e os nove agentes e instala o Remotion, as dependências fixadas e o navegador de renderização. A primeira execução precisa de internet. A instalação e o vídeo de exemplo dispensam chave de API.
 
 ```sh
-npx --yes --package=github:Lucas-Varga/remotion-video-studio-skill#v1.0.0 video-studio-install --host all --project meu-filme
+npx --yes --package=github:Lucas-Varga/remotion-video-studio-skill#v1.0.1 video-studio-install --host all --project meu-filme
 ```
 
 Abra **meu-filme** no Codex, no Claude Code ou no Cursor e peça seu vídeo. Para instalar em apenas um deles, troque `all` por `codex`, `claude` ou `cursor`. Se o editor já estava aberto, inicie uma nova sessão na raiz do projeto.
@@ -46,6 +46,8 @@ Você pode começar só com a ideia ou anexar um PDF, fotos, clipes, logotipo, m
 - **Só material fornecido.** Use a identidade, as fotos e a voz entregues pelo cliente. A equipe ajusta enquadramento, ritmo, texto na tela e mixagem.
 - **Conteúdo original.** A equipe propõe conceito, roteiro e cenas. Para gerar mídia, apresenta modelo, timbre, interpretação, qualidade e custo antes de consumir créditos.
 - **Produção híbrida.** Preserve os produtos e a locução do cliente e gere, por exemplo, apenas uma cena de apoio. O cliente pode escolher o tratamento de cada material.
+
+Para voz nova, o padrão recomendado é **`gpt-live-1.1`**. A skill sempre apresenta também `gpt-realtime-2.1`, `gpt-realtime-2.1-mini` e a opção de usar uma gravação própria, com as vozes compatíveis para o usuário escolher. O padrão Live usa gravação de uma sessão Live. O utilitário `narrar.py` incluído atende aos modelos Realtime.
 
 O catálogo apresenta alternativas de locução e imagem da produção mais exigente à econômica, com vozes compatíveis por modelo e links oficiais. O gasto depende das escolhas e da conta do provedor. [Abrir o catálogo](skills/video-studio/references/modelos.md)
 
